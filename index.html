@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wineshope - Ваш вибір вина</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Wineshope</h1>
+            </div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li><a href="#assortment">Асортимент</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu" onclick="toggleNav()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <nav class="nav-mobile">
+                <ul>
+                    <li><a href="#assortment">Асортимент</a></li>
+                    <li><a href="#about">Про нас</a></li>
+                    <li><a href="#contact">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<hr>
+    <section class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>Ласкаво просимо до "Wineshope"</h1>
+                    <p>Ваш провідник у світі вин, де кожна пляшка має свою унікальну історію та смак.</p>
+                    <a href="#assortment" class="btn">Придбати зараз</a>
+                </div>
+            </div>
+        </div>
+    </section>
+<hr>
+    <section class="main-container about-section" id="about" data-scroll="about">
+        <div class="section-container">
+            <h2>Про нас</h2>
+            <p> Ласкаво просимо до "Wineshope" – вашого вірного провідника у світі вин. Ми віримо в те, що кожна пляшка вина має свою унікальну історію та смак, і наша місія - допомогти вам відкрити цей світ.</p>
+            <h2> Наша історія </h2>
+            <p>"Wineshope" засновано з любові до вина та бажання поділитися цією любов'ю з іншими. З найперших кроків магазину ми прагнемо обирати та пропонувати тільки найкращі вина від визнаних виробників та малих виноробень.</p>
+            <h2>Наш підхід</h2>
+            <p>Наша команда винних експертів ретельно відбирає кожне вино в нашому асортименті, переконуючись, що кожна пляшка, яку ви вибираєте, має неповторний смак та вишуканість. Ми прагнемо зробити ваш вибір простим та захопливим.</p>                
+            <h2> Наше завдання</h2>
+            <p> Наша мета - перетворити вибір та покупку вина в захоплюючий досвід. Ми горді тим, що можемо допомогти вам вибрати вино для будь-якого випадку - від святкового обіду до затишного вечора вдома.</p>
+            <p> Приєднуйтесь до нас у подорожі світом вина та дозвольте смаку стати частиною вашого неповторного настрою.</p>
+            <p>Дякуємо, що обрали "Wineshope"!</p>
+        </div>
+    </section>
+    <hr>
+
+    <section class="main-container assortment-section" id="assortment" data-scroll="assortment">
+        <div class="section-container">
+            <h2>Наш асортимент</h2>
+            <p>Відкрийте для себе найкращі вина з усього світу. Насолоджуйтесь унікальними смаками та ароматами.</p>
+        </div>
+    </section>
+
+    <div class="main-container">
+        <section id="assortment">
+            <div class="wine-item">
+                <img src="img/wine/colossal.jpg" alt="Wine 1">
+                <h2>Вино №1</h2>
+                <p>Опис вина №1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="price">Ціна: $20.00</p>
+            </div>
+            <div class="wine-item">
+                <img src="img/wine/stories.jpg" alt="Wine 2">
+                <h2>Вино №2</h2>
+                <p>Опис вина №2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="price">Ціна: $25.00</p>
+            </div>
+            <div class="wine-item">
+                <img src="img/wine/fortissimo.jpg" alt="Wine 3">
+                <h2>Вино №3</h2>
+                <p>Опис вина №2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="price">Ціна: $25.00</p>
+            </div>
+        </section>
+        <div class="section-container">
+            <p>Ці та багато інших сортів чекають вас у нашому магазині.</p>
+        </div>
+    </div>
+<hr>
+    <footer>
+        <div class="footer-container" id="contact" data-scroll="contact">
+            <p>Адреса: Луцьк, Проспект Волі, 1, Телефон: +380980000000, Email: example@gmail.com</p>
+            <p>&copy; 2023 Wineshope. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var navMobile = document.querySelector('.nav-mobile');
+            navMobile.classList.toggle('nav-mobile-visible');
+        }
+    </script>
+
+<script src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(../img/fone.jpg) center/cover no-repeat;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+   
+}
+
+.logo h1 {
+    margin: 0;
+    color: #fff  ;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff  ;
+    margin: 0 1em;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+li {
+    display: block;
+  }
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+}  
+
+hr {
+    margin: 0px;
+    padding: 0;
+    font-weight: bold;
+    border-bottom: 2px solid #fff;
+}
+
+.btn {
+    display: inline-block;  
+    background-color: #018574;
+    color: #fff;    
+    padding: 1rem 1.5rem;   
+    text-decoration: none;  
+    border-radius: 3px; 
+   }
+
+.btn:hover {
+    background-color: #005b4f;
+}
+
+nav a:hover {
+    color: #00695c;
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.main-container {
+    padding: 2em 1em;
+    text-align: center;
+    color: #fff; 
+    background-color: rgba(1, 133, 116, 0.9); 
+}
+
+h1, h2 {
+    color: #333;
+} 
+
+p {
+    line-height: 1.6;
+    color: #fff; 
+}
+
+
+
+#assortment {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.wine-item {
+    width: 30%; 
+    margin: 1em;
+    padding: 1em;
+    border: 3px solid #ddd; 
+    border-radius: 8px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.wine-item img {
+    max-width: 100%; 
+    border-radius: 4px;
+    margin-bottom: 1em;
+}
+
+.about-section {
+    background-color: rgba(49, 54, 54, 0.8); 
+    padding: 2em;
+    text-align: center;
+}
+
+.about-title {
+    color: #00695c;
+}
+
+.assortment-section{
+    background-color: rgba(1, 133, 116, 0.9);
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333; 
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-desktop {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        background-color: #018574; 
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 1;
+        display: none;
+    }
+
+    .nav-mobile a {
+        padding: 1em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.5s ease-out;
+        transform: scaleY(1);
+        transform-origin: top;
+    }
+
+    .nav-mobile a:hover {
+        background-color: #005b4f; 
+    }
+
+    .nav-mobile-visible {
+        display: flex;
+    }
+
+    .main-container {
+        padding: 1em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav-mobile {
+        display: none;
+    }
+
+    .nav-desktop {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .nav-desktop ul {
+        display: flex;
+    }
+
+    .nav-desktop a {
+        margin: 0 1em;
+    }
+}
+
+@media (max-width: 767px) {
+    #assortment {
+        flex-direction: column;
+    }
+
+    .wine-item {
+        width: 90%; 
+        margin: auto;
+        margin-top: 15px;
+    }
+}
